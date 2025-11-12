@@ -35,4 +35,16 @@ public:
   void setVal(int i, int j, int val) {
     data[i][j] = val;
   }
+
+  Matrix operator+(Matrix const &other) {
+    Matrix res;
+    res.size = size;
+    for (int i = 0; i < size; i++) {
+      for (int j = 0; j < size; j++) {
+        res.data[i][j] = data[i][j] + other.data[i][j];
+      }
+    }
+    return res;
+  }
+
 };
