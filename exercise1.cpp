@@ -12,10 +12,28 @@ int main() {
     cout << "Invalid name";
     return 1;
   }
+  int n;
+  file >> n;
 
   Matrix A, B;
-  A.readFile(file);
-  B.readFile(file);
+  A.setSize(n);
+  B.setSize(n);
+
+  for (int i = 0; i < n; i++) {
+    for (int j = 0; j < n; j++) {
+      int val; 
+      file >> val;
+      A.setVal(i, j, val);
+    }
+  }
+
+  for (int i = 0; i < n; i++) {
+    for (int j = 0; j < n; j++) {
+      int val;
+      file >> val;
+      B.setVal(i, j, val);
+    }
+  }
 
   cout << "Matrix A: \n";
   A.display();

@@ -12,15 +12,6 @@ public:
     size = 0;
   }
 
-  void readFile(ifstream &file) {
-    file >> size;
-    for (int i = 0; i < size; i++) {
-      for (int j = 0; j < size; j++) {
-        file >> data[i][j];
-      }
-    }
-  }
-
   void display() {
     for (int i = 0; i < size; i++) {
       for (int j = 0; j < size; j++) {
@@ -30,6 +21,9 @@ public:
     }
   }
 
+  void setSize(int n) {
+    size = n;
+  }
   int getSize() {
     return size;
   }
