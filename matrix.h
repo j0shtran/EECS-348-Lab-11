@@ -47,4 +47,17 @@ public:
     return res;
   }
 
+  Matrix operator*(Matrix const &other) {
+    Matrix res;
+    res.size = size;
+    for (int i = 0; i < size; i++) {
+      for (int j = 0; j < size; j++) {
+        res.data[i][j] = 0;
+        for (int k = 0; k < size; k++) {
+          res.data[i][j] += data[i][k] * other.data[k][j];
+        }
+      }
+    }
+    return res;
+  }
 };
