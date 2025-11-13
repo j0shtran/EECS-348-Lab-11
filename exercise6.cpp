@@ -31,7 +31,7 @@ int main() {
   cin >> c1;
   cout << "Enter a column to swap with: ";
   cin >> c2;
-  A.swapCols(A, c1, c2);
+  A.swapCols(A, c1, c2); //exact same process as swapRows, just uses swapCols function instead.
 
   return 0;
 }

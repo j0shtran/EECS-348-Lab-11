@@ -36,9 +36,9 @@ int main() {
   }
 
   cout << "Matrix A: \n";
-  A.diagonalSum();
+  A.diagonalSum(); //uses the diagonalSum function to print the diagonal sums for matrix a 
   cout << "Matrix B: \n";
-  B.diagonalSum();
+  B.diagonalSum(); //same process, but for matrix B
 
   return 0;
 }

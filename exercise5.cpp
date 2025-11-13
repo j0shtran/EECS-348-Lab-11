@@ -25,13 +25,13 @@ int main() {
       A.setVal(i, j, val);
     }
   }
-  int r1;
-  int r2;
-  cout << "Enter a row: ";
+  int r1; //calls int variable r1
+  int r2; //calls int variable r2
+  cout << "Enter a row: "; //prompts user for row 1
   cin >> r1;
-  cout << "Enter a row to swap with: ";
+  cout << "Enter a row to swap with: "; //prompts user for row 2
   cin >> r2;
-  A.swapRows(A, r1, r2);
+  A.swapRows(A, r1, r2); //uses the swapRows function to swap the two rows and print the resulting matrix
 
   return 0;
 }

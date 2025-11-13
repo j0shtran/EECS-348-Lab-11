@@ -33,7 +33,8 @@ int main() {
   cout << "Enter a column: ";
   cin >> col;
   cout << "Enter a value: ";
-  cin >> val;
+  cin >> val; 
+  //prompts the user for a row, column, and value. after getting valid responses for each one, uses the update function to set the value at the  index given to the value given by the user.  
   A.update(row, col, val);
 
   return 0;

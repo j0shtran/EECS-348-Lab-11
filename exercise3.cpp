@@ -34,9 +34,9 @@ int main() {
       B.setVal(i, j, val);
     }
   }
-
+//same as exercise 1 and 2 until this point
   cout << "A * B = \n";
-  Matrix C = A * B;
+  Matrix C = A * B; //same as addition, but instaed uses overloaded operator * to print the product of A and B
   C.display();
 
   return 0;

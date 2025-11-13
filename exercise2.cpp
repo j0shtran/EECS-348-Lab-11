@@ -34,10 +34,10 @@ int main() {
       B.setVal(i, j, val);
     }
   }
-
-  cout << "A + B = \n";
-  Matrix C = A + B;
-  C.display();
+//this program is functionaly the same as exercise 1 until this point. 
+  cout << "A + B = \n"; 
+  Matrix C = A + B; //uses the overloaded operator to add the two matrices and sets a third matrix, C, to the sum.  
+  C.display(); //prints the resulting matrix C 
 
   return 0;
 }
