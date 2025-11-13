@@ -60,4 +60,15 @@ public:
     }
     return res;
   }
+
+  void diagonalSum() {
+    int mainSum = 0;
+    int secondSum = 0;
+    for (int i = 0; i < size; i++) {
+      mainSum += data[i][i];
+      secondSum += data[i][size - i  - 1];
+    }
+    cout << "Main diagonal sum: " << mainSum << endl;
+    cout << "Secondary diagonal sum: " << secondSum << endl;
+  }
 };
