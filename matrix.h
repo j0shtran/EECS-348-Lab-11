@@ -71,4 +71,20 @@ public:
     cout << "Main diagonal sum: " << mainSum << endl;
     cout << "Secondary diagonal sum: " << secondSum << endl;
   }
+
+
+  void swapRows(Matrix tmpMatrix, int r1 = 0, int r2 = 1) {
+    if (r1 < 0 || r1 >= tmpMatrix.size || r2 < 0 || r2 >= tmpMatrix.size) {
+      cout << "Invalid rows!" << endl;
+      return;
+    }
+
+    for (int j = 0; j < tmpMatrix.size; j++) {
+      int temp = tmpMatrix.data[r1][j];
+      tmpMatrix.data[r1][j] = tmpMatrix.data[r2][j];
+      tmpMatrix.data[r2][j] = temp;
+    }
+
+    tmpMatrix.display();
+  }
 };
