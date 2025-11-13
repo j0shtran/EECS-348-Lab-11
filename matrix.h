@@ -102,4 +102,14 @@ public:
     
     tmpMatrix.display();
   }
+
+  void update(int r, int c, int val) {
+    if (r < 0 || r >= size || c < 0 || c >= size) {
+      cout << "Invalid input..." << endl;
+      return;
+    }
+
+    data[r][c] = val;
+    display();
+  }
 };

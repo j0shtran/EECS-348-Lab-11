@@ -1,7 +1,7 @@
 CC = g++
 CFLAGS = -Wall
 
-all: exercise1 exercise2 exercise3 exercise4 exercise5 exercise6
+all: exercise1 exercise2 exercise3 exercise4 exercise5 exercise6 exercise7
 
 exercise1: exercise1.cpp 
 	$(CC) $(CFLAGS) exercise1.cpp -o exercise1 
@@ -20,5 +20,9 @@ exercise5: exercise5.cpp
 
 exercise6: exercise6.cpp
 	$(CC) $(CFLAGS) exercise6.cpp -o exercise6
+
+exercise7: exercise7.cpp
+	$(CC) $(CFLAGS) exercise7.cpp -o exercise7 
+
 clean:
-	rm rf *.o -f exercise1 exercise2 exercise3 exercise4 exercise5 exercise6
+	rm rf *.o -f exercise1 exercise2 exercise3 exercise4 exercise5 exercise6 exercise7
