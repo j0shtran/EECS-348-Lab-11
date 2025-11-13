@@ -87,4 +87,19 @@ public:
 
     tmpMatrix.display();
   }
+
+  void swapCols(Matrix tmpMatrix, int c1 = 0, int c2 = 1) {
+    if (c1 < 0 || c1 >= tmpMatrix.size || c2 < 0 || c2 >= tmpMatrix.size) {
+      cout << "Invalid columns!" << endl;
+      return;
+    }
+
+    for (int i = 0; i < tmpMatrix.size; i++) {
+      int temp = tmpMatrix.data[i][c1];
+      tmpMatrix.data[i][c1] = tmpMatrix.data[i][c2];
+      tmpMatrix.data[i][c2] = temp;
+    }
+    
+    tmpMatrix.display();
+  }
 };
